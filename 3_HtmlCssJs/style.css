@@ -1,0 +1,20 @@
+#first_header {
+    color: blue;
+}
+
+body {
+    background-color: aqua;
+}
+
+span {
+    color: red;
+}
+
+.header1 {
+    font-size: 100%;
+
+}
+
+.header {
+    color: green;
+}
