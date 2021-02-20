@@ -1,7 +1,9 @@
 REQUIRED INSTALLATIONS:
 https://nodejs.org/en/download/
 
+
 **Run in directory where you want to create your React app**
+
 Download React with npm:
 - npm i react
 - npm i create-react-app
