@@ -48,7 +48,7 @@ function App() {
         check? 
         books.map((book, index) => {
           return (
-            <BookCard book={book}/>
+            <BookCard book={book} key={index}/>
           )
         }): null
       }
