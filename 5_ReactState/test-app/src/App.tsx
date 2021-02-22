@@ -1,18 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { BookCard } from './components/BookCard';
 import { Book } from './models/Book';
+import { Counter } from './components/Counter';
 
 function App() {
-  let check = false;
-
   let book1 = new Book(
     "Misery",
     "A great story by Stephen King",
     "white",
     "https://www.artistiqueacres.ca/images/cute-cat.jpg",
-    true
   );
 
   let book2 = new Book(
@@ -20,15 +18,16 @@ function App() {
     "A great story by Alan Spider",
     "orange",
     "https://sun9-48.userapi.com/impg/YoiUxPesntzool0sxNh1dGCnTBj8NZSxU7X4wg/Iku15ReGJLI.jpg?size=400x500&quality=96&proxy=1&sign=332be830733c1259a4516ab8c13db71f&type=album",
-    false
   );
 
-  let books = [
+  let [books, setBooks] = useState([
     book1,
     book2,
     book1,
-    book2
-  ]
+    book2,
+  ]);
+
+  let [check, setCheck] = useState(true);
 
   return (
     <div style={{
@@ -46,14 +45,36 @@ function App() {
         </img>
       </div>
       {
-        books.map((book) => {
+        check? 
+        books.map((book, index) => {
           return (
             <BookCard book={book}/>
           )
-        })
+        }): null
       }
       {/* <BookCard book={book1}/>
       {check? <BookCard book={book2}/> : null} */}
+      <button onClick={
+        () => {
+          setBooks(books.slice(0, books.length - 1));
+        }
+      }>
+        Удалить
+      </button>
+      <br/>
+      <br/>
+      <button onClick={
+        () => {
+          setCheck(!check);
+        }
+      }>
+        Render
+      </button>
+      <br/>
+      <br/>
+      <Counter/>
+      <br/>
+      <br/>
     </div>
   );
 }
