@@ -3,6 +3,9 @@
     height: 200px;
     display: grid;
     margin: auto;
+    border: solid;
+    border-width: 2px;
+    border-radius: 20px;
     justify-items: center;
     align-self: center;
     padding: 10px;

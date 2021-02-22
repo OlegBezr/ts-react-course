@@ -1,11 +1,11 @@
 import { useState } from "react";
-// import styleClasses from "./Counter.css";
+import styleClasses from "./Counter.module.css";
 
 function Counter () {
     let [count, setCount] = useState(0);
 
     return (
-        <div>
+        <div className={styleClasses.Counter}>
             <h1>
                 {count}
             </h1>
