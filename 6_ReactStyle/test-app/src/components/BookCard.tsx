@@ -1,24 +1,15 @@
+import React from "react";
 import { useState } from "react";
 import { Book } from "../models/Book";
+import { StyledDiv } from "./StyledDiv";
 
 function BookCard(props : {book: Book}) {
     let book = props.book;
     let [displayImage, setDisplayImage] = useState(true);
 
     return (
-        <div style={{
-            width: 200,
-            height: 200,
-            backgroundColor: book.backgroundColor,
-            display: 'grid',
-            margin: 'auto',
-            justifyItems: 'center',
-            alignSelf: 'center',
-            borderWidth: 3,
-            borderColor: "black",
-            borderStyle: "solid",
-            padding: 10,
-            marginBottom: 10,
+        <StyledDiv style={{
+            backgroundColor: book.backgroundColor
         }}>
             <h3>
                 {book.title}
@@ -40,7 +31,7 @@ function BookCard(props : {book: Book}) {
             }}>
             </img>
             : null }
-        </div>
+        </StyledDiv>
     );
 }
 

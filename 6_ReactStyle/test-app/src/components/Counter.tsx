@@ -1,19 +1,11 @@
 import { useState } from "react";
+// import styleClasses from "./Counter.css";
 
 function Counter () {
     let [count, setCount] = useState(0);
 
     return (
-        <div style={{
-            width: 200,
-            height: 200,
-            display: 'grid',
-            margin: 'auto',
-            justifyItems: 'center',
-            alignSelf: 'center',
-            padding: 10,
-            marginBottom: 10,
-        }}>
+        <div>
             <h1>
                 {count}
             </h1>

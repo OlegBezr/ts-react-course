@@ -1,0 +1,10 @@
+.Counter {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    margin: auto;
+    justify-items: center;
+    align-self: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
