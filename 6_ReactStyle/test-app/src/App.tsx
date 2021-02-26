@@ -48,7 +48,10 @@ function App() {
         check? 
         books.map((book, index) => {
           return (
-            <BookCard book={book} key={index}/>
+            <BookCard book={book} key={index}>
+              <text>Some text</text>
+              <text>More text</text>
+            </BookCard>
           )
         }): null
       }

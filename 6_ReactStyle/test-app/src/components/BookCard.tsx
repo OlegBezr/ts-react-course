@@ -1,9 +1,10 @@
-import React from "react";
+import { throws } from "assert";
+import React, { ReactChild, ReactElement, ReactNode } from "react";
 import { useState } from "react";
 import { Book } from "../models/Book";
 import { StyledDiv } from "./StyledDiv";
 
-function BookCard(props : {book: Book}) {
+function BookCard(props : {book: Book, children?: ReactNode}) {
     let book = props.book;
     let [displayImage, setDisplayImage] = useState(true);
 
@@ -18,6 +19,9 @@ function BookCard(props : {book: Book}) {
             <text>
                 {book.description}
             </text>
+            <div>
+                {props.children}
+            </div>
             <br/>
             <button onClick ={
                 () => {
