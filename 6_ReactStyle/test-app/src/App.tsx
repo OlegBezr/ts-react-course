@@ -4,6 +4,8 @@ import './App.css';
 import { BookCard } from './components/BookCard';
 import { Book } from './models/Book';
 import { Counter } from './components/Counter';
+import { PlaceCard } from './components/PlaceCard';
+import { BookCard2 } from './components/BookCard2';
 
 function App() {
   let book1 = new Book(
@@ -48,10 +50,8 @@ function App() {
         check? 
         books.map((book, index) => {
           return (
-            <BookCard book={book} key={index}>
-              <text>Some text</text>
-              <text>More text</text>
-            </BookCard>
+            <BookCard2 book={book} key={index}>
+            </BookCard2>
           )
         }): null
       }
@@ -76,6 +76,9 @@ function App() {
       <br/>
       <br/>
       <Counter/>
+      <br/>
+      <br/>
+      <PlaceCard></PlaceCard>
       <br/>
       <br/>
     </div>

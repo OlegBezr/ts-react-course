@@ -33,5 +33,6 @@
 **React managing style** 
 1. (Recommended by Oleg) Styled-components (https://styled-components.com/):
     - npm install --save styled-components
+    - npm i @types/styled-components
 2. Radium: https://formidable.com/open-source/radium/
 3. (Recommended by professionals) CSS-modules https://github.com/gajus/react-css-modules
