@@ -20,7 +20,7 @@
     - CSS handbook: https://www.freecodecamp.org/news/the-css-handbook-a-handy-guide-to-css-for-developers-b56695917d11/
     - Visual guide: https://cssreference.io/
 3. UI Design tools (use export to code feature):
-    - (Recommended) Figma: https://www.figma.com/
+    - (Recommended) Figma: https://www.figma.com/. Plugin for code export: https://www.figma.com/community/plugin/842128343887142055/Figma-to-Code-(HTML%2C-Tailwind%2C-Flutter%2C-SwiftUI)
     - Adobe XD: https://www.adobe.com/products/xd.html
     - Sketch (MacOS only): https://www.sketch.com/
 4. React templates:
